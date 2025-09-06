@@ -6,7 +6,7 @@
 ## Execução
 ```bash
 # 1. Clone o repositório
-git clone <seu-repositorio>
+git clone git@github.com:KANEEE1/Sistema-de-Aluguel-de-Motos.git
 
 # 2. Navegue para o diretório
 cd Sistema-de-Aluguel-de-Motos

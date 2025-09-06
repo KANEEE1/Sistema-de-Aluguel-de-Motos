@@ -1,4 +1,4 @@
-# Como Executar o Projeto
+# Como Executar o Sistema de Aluguel de Motos
 
 ## Pré-requisitos
 - Docker e Docker Compose instalados
@@ -6,10 +6,10 @@
 ## Execução
 ```bash
 # 1. Clone o repositório
-git clone
+git clone <seu-repositorio>
 
 # 2. Navegue para o diretório
-cd Desafio-BackEnd
+cd Sistema-de-Aluguel-de-Motos
 
 # 3. Execute com Docker
 docker compose up --build
@@ -26,7 +26,7 @@ http://localhost:8080/swagger
 POST /auth/register
 {
   "username": "admin",
-  "email": "admin@mottu.com",
+  "email": "admin@test.com",
   "password": "admin123",
   "role": "Admin"
 }
@@ -35,7 +35,7 @@ POST /auth/register
 POST /auth/register
 {
   "username": "entregador1",
-  "email": "entregador@mottu.com", 
+  "email": "entregador@test.com", 
   "password": "entregador123",
   "role": "DeliveryPerson"
 }

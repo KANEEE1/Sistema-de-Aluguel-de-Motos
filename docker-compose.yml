@@ -1,13 +1,13 @@
 services:
-  mottu-api:
+  rental-system-api:
     build:
       context: .
-      dockerfile: src/Mottu.Api/Dockerfile
+      dockerfile: src/RentalSystem.Api/Dockerfile
     ports:
       - "8080:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=postgres-db;Port=5432;Database=mottu_db;Username=mottu_user;Password=mottu_password
+      - ConnectionStrings__DefaultConnection=Host=postgres-db;Port=5432;Database=rental_system_db;Username=rental_user;Password=rental_password
       - RabbitMQ__Host=rabbitmq
       - RabbitMQ__Username=guest
       - RabbitMQ__Password=guest
@@ -20,9 +20,9 @@ services:
     ports:
       - "5433:5432"
     environment:
-      - POSTGRES_DB=mottu_db
-      - POSTGRES_USER=mottu_user
-      - POSTGRES_PASSWORD=mottu_password
+      - POSTGRES_DB=rental_system_db
+      - POSTGRES_USER=rental_user
+      - POSTGRES_PASSWORD=rental_password
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
